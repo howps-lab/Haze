@@ -1,0 +1,6 @@
+{
+  "name": "Singapore Real-Time Haze Monitoring Dashboard",
+  "description": "Live air-quality monitoring dashboard for Singapore with real-time 1-hour PM2.5 and 24-hour PSI readings across all five regions from the official NEA and Data.gov.sg sources.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
