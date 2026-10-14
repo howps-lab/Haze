@@ -4,6 +4,7 @@
  */
 
 import React, { useEffect, useState, useCallback, useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Header } from './components/Header';
 import { OverallSummary } from './components/OverallSummary';
 import { SingaporeMapDashboard } from './components/SingaporeMapDashboard';
@@ -95,6 +96,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-100/70 text-slate-900 font-sans antialiased selection:bg-rose-200">
+      <Analytics />
       {/* 1. Header with live Singapore clock & auto-refresh controls */}
       <Header
         lastUpdated={lastRefreshedString}
