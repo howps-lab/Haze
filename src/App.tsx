@@ -4,6 +4,7 @@
  */
 
 import React, { useEffect, useState, useCallback, useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Header } from './components/Header';
 import { OverallSummary } from './components/OverallSummary';
 import { SingaporeMapDashboard } from './components/SingaporeMapDashboard';
@@ -177,6 +178,9 @@ export default function App() {
 
       {/* 7. Footer & Attributions */}
       <Footer />
+      
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
